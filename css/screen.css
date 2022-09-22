@@ -494,7 +494,22 @@ input {
     Class to put on all input="text" like form inputs
 */
 
-.c-input {}
+.c-input {
+    /* ZEER HANDIG DEZE RESET VOOR VERSCHILLENDE BROWSERS */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E2E3E7;
+    padding: 10px 0px 10px 4px;
+    border-radius: 3px;
+    font: inherit;
+    color: inherit;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 .c-input:focus {}
 
