@@ -18,7 +18,9 @@
 #Variables
 \*------------------------------------*/
 
-:root {}
+:root {
+    accent-color: #3385FF;
+}
 
 /* CSS variables here */
 
@@ -170,6 +172,7 @@ hr {
 a {
     color: #3385FF;
     transition: all .1s ease-in-out;
+    text-decoration: none;
 }
 
 a:visited,
@@ -203,7 +206,12 @@ input {
 }
 
 .o-row--login {
-    /* stuff here to align the card */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* size modifiers */
@@ -480,7 +488,8 @@ input {
 .c-card {
     background-color: white;
     border-radius: 3px;
-    box-shadow:  0 0 0 2px #00000007;
+    box-shadow:  0 0 0 4px #afafaf07;
+    width: 423px;
 }
 
 .c-card__body {
@@ -492,7 +501,7 @@ input {
     text-align: center;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: bold;
 }
 
 .c-card__footer {
@@ -613,6 +622,10 @@ input {
 
 .u-color-neutral-dark {
     color: Black;
+}
+
+.u-color-neutral-light {
+    color: #757787;
 }
 
 /*
