@@ -509,9 +509,13 @@ input {
     color: inherit;
     font-size: 16px;
     line-height: 24px;
+    outline: none;
 }
 
-.c-input:focus {}
+.c-input:focus {
+    border-color: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 3px #3385ff4d;
+}
 
 /*
     Component: Label
@@ -531,13 +535,32 @@ input {
     Class to put on form buttons or links
 */
 
-.c-button {}
+.c-button {
+    background-color: #3385FF;
+    border-color: #2E77E6;
+    border-radius: 3px;
+    border-width: 1px;
+    box-shadow: none;
+    color: #FFFFFF;
+    outline: none;
+    padding: 12px;
+    font: inherit;
+    width: 100%;
+}
 
-.c-button:hover {}
+.c-button:hover {
+    background-color: #4F95FF;
+}
 
-.c-button:focus {}
+.c-button:focus {
+    background-color: #3385FF;
+    border-color: h-offset v-offset blur spread color;
+    box-shadow: 0 0 0 3px #3385ff4d;
+}
 
-.c-button:active {}
+.c-button:active {
+    background-color: #2E77E6;
+}
 
 .c-button--block {}
 
