@@ -477,6 +477,29 @@ input {
     Card with box shadow
 */
 
+.c-card {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow:  0 0 0 2px #00000007;
+}
+
+.c-card__body {
+    padding: 48px;
+}
+
+.c-card__title {
+    padding-top: 48px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.c-card__footer {
+    padding: 24px;
+    border-top: 1px solid #E2E3E7;
+}
+
 /*
     Component: Forms
     ---
@@ -523,7 +546,17 @@ input {
     Class to put on all form labels
 */
 
-.c-label {}
+.c-label {
+    color: #606274;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.c-label--option {
+    margin-bottom: 0;
+    margin-left: 8px;
+}
 
 /* If a input is focused within the form-field class change te color of the label */
 
